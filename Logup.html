@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign up</title>
+    <link href="Bootstrap/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-md-push-3">
+            <form class="form-signin" action="Logup.php" method="post">
+                <h2 class="form-signin-heading">Please Enter the information to sign up</h2>
+                <h2><small>Username</small></h2>
+                <input type="text" name="username" class="form-control" placeholder="Username" required>
+                <h2><small>Password</small></h2>
+                <input type="password" name="password" class="form-control" placeholder="Password" required>
+                <h2><small>Reenter password</small></h2>
+                <input type="password" name="repassword" class="form-control" placeholder="Password" required>
+                <h2><small>Street</small></h2>
+                <input type="text" name="street" class="form-control" placeholder="Street" required>
+                <h2><small>Zipcode</small></h2>
+                <input type="text" name="zipcode" class="form-control" placeholder="Zipcode" required>
+                <h2><small>City</small></h2>
+                <input type="text" name="city" class="form-control" placeholder="City" required>
+                <h2><small>State</small></h2>
+                <input type="text" name="state" class="form-control" placeholder="State" required>
+                <br/>
+                <h2><small>For Home Customers</small></h2>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="customerType" value="Home" checked>
+                        I am a Home Customer
+                    </label>
+                </div>
+                <h4><small>Age</small></h4>
+                <input type="text" name="age" class="form-control" placeholder="Age">
+                <h4><small>Gender</small></h4>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="gender" value="Male" checked>Male
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="Female">Female
+                    </label>
+                </div>
+                <h4><small>Marrige Status</small></h4>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="marriage" value="Married" checked>Married
+                    </label>
+                    <label>
+                        <input type="radio" name="marriage" value="Single">Single
+                    </label>
+                </div>
+                <h4><small>Income($)</small></h4>
+                <input type="text" name="income" class="form-control" placeholder="Income">
+
+                <br/>
+                <h2><small>For Business Customers</small></h2>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="customerType" value="Business">I am a Business Customer
+                    </label>
+                </div>
+                <h4><small>Company Name</small></h4>
+                <input type="text" name="companyName" class="form-control" placeholder="Company Name">
+                <h4><small>Company Category</small></h4>
+                <select class="form-control" name="companyCategory">
+                    <option>Internet company</option>
+                    <option>Food company</option>
+                    <option>Electrical company</option>
+                    <option>Securities company</option>
+                    <option>Airline company</option>
+                </select>
+                <h4><small>Company Gross Annual Income($)</small></h4>
+                <input type="text" name="companyIncome" class="form-control" placeholder="Income">
+
+                <br/>
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="Bootstrap/jquery-2.1.1.min.js"></script>
+<script src="Bootstrap/bootstrap.min.js"></script>
+</body>
+</html>
